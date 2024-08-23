@@ -16,11 +16,13 @@ nav{
 
 h2>a{
     text-decoration: none;
-    color: green;
+    color: limegreen;
 }
 
 h2{
     margin: 0;
+    font-family: "Oswald";
+    font-size: 30px;
 }
 
 .red{
@@ -37,6 +39,7 @@ nav>ul{
 
 nav>ul>li{
     list-style: none;
+    font-family: "Montserrat";
 }
 
 nav>ul>li>a{
@@ -44,12 +47,21 @@ nav>ul>li>a{
     font-size: large;
     color: black;
     padding: 10px 20px 10px 20px;
-    transition: 0.5s ease
+    transition: 0.5s ease;
 }
 
 nav>ul>li>a:hover{
     background-color: darkred;
     color: white;
+}
+
+h1{
+    font-family: "Bebas Neue";
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Open Sans';
 }
 
 .content{
@@ -65,9 +77,15 @@ nav>ul>li>a:hover{
     margin-right: 50px;
 }
 
+img{
+    width: 30px;
+    display: inline;
+    position: ;
+}
+
 .menuDisplay{
     display: flex;
-    flex-grow: 2;
+    flex-grow: 3;
     flex-basis: 0;
 }
 
@@ -80,7 +98,7 @@ div>a{
     background-size: cover;
     flex-grow: 1;
     flex-basis: 0;
-    margin: 5px;
+    margin: 8px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -91,12 +109,33 @@ div>a{
     background-image: url("./images/apple-breakfast-quinoa.jpg");
 }
 
+.breakfast:hover {
+    background-image: 
+    linear-gradient(rgba(90, 90, 90, 0.999), rgba(90, 90, 90, 0.999)), 
+        url("./images/apple-breakfast-quinoa.jpg");
+    background-blend-mode: overlay; 
+}
+
 .lunch{
     background-image: url("./images/pasta-salad-recipe-for-lunch.jpg");
 }
 
+.lunch:hover {
+    background-image: 
+    linear-gradient(rgba(90, 90, 90, 0.999), rgba(90, 90, 90, 0.999)),        
+    url("./images/pasta-salad-recipe-for-lunch.jpg");
+    background-blend-mode: overlay; 
+}
+
 .dinner{
     background-image: url("./images/shrimp-dinner.jpg");
+}
+
+.dinner:hover {
+    background-image: 
+        linear-gradient(rgba(90, 90, 90, 0.999), rgba(90, 90, 90, 0.999)), 
+        url("./images/shrimp-dinner.jpg");
+    background-blend-mode: overlay; 
 }
 
 .whiteback{
@@ -106,9 +145,38 @@ div>a{
 }
 
 .greenback{
-    background-color: lightgreen;
+    background-color: limegreen;
     padding: 5px;
     margin: 0;
+}
+
+.freshText{
+    padding-left: 39px;
+}
+
+.breakfastText{
+    padding-left: 17px;
+}
+
+.sweetText{
+    padding-left: 35px;
+
+}
+
+.lunchText{
+    padding-left: 45px;
+}
+
+.deliciousText{
+    padding-left: 10px;
+}
+
+.dinnerText{
+    padding-left: 40px;
+}
+
+h3{
+    font-family: "Oswald";
 }
 
 h3>a{
