@@ -29,6 +29,12 @@ h2{
     color: red;
 }
 
+.menuButton{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
 nav>ul{
     display: flex;
     justify-content: space-between;
@@ -58,6 +64,7 @@ nav>ul>li>a:hover{
 h1{
     font-family: "Bebas Neue";
     font-size: 50px;
+    margin: 0px;
 }
 
 p{
@@ -66,7 +73,7 @@ p{
 
 .content{
     height: 70%;
-    background-color: lightgray;
+    background-image: url(./images/more-leaves-on-green.png);
     padding: 75px;
     display: flex;
 }
@@ -75,6 +82,8 @@ p{
     flex-grow: 1;
     flex-basis: 0;
     margin-right: 50px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .text > h3 {
@@ -195,4 +204,33 @@ h3>a{
 h3>a:hover{
     background-color: darkred;
     color: white;
+}
+
+@media screen and (max-width: 1200px){
+    html, body {
+        height: 200vh;
+    }
+    
+    .menuButton{
+        display: flex;
+    }
+
+    .linkMenu{
+        display: none;
+    }
+
+    .content{
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .text{
+        margin: 0px 0px 5px 0px;
+        padding-bottom: 10px;
+    }
+
+    .menuDisplay{
+        flex-direction: column;
+    }
 }
